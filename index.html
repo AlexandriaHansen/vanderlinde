@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Dummy site for a family business">
+  <meta name="author" content="Alexandria Hansen">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo&family=Comfortaa&display=swap" rel="stylesheet">
+  <link href="./images/faviconVDL.svg" rel="icon" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <title>van der Linde Crane Service, LLC</title>
+</head>
+
+<body>
+  <header>
+    <div class="nav-wrapper">
+      <div class="nav-left">
+        <nav>
+          <button class="collapsible" onclick="openNav()"></button>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#reviews" onclick="closeNav()">Reviews</a>
+            <a href="#gallery" onclick="closeNav()">Gallery</a>
+          </div>
+        </nav>
+        <a href="index.html"><img src="./images/logoVDL.png" alt="van der Linde Crane Service, LLC logo" class="logo"></a>
+      </div>
+      <div class="nav-right">
+        <nav class="desktop">
+          <ul>
+            <li class="right-menu-items"><a href="#pop-up" class="icon-center"><img class="icon" src="./images/article_black_24dp.svg" alt="Get Quote">Get
+                Quote</a></li>
+            <li class="right-menu-items"><a href="tel:14349811977" class="icon-center"><img class="icon" src="./images/phone_black_24dp.svg"
+                  alt="Call Now">Call Now</a></li>
+          </ul>
+        </nav>
+        <nav class="mobile">
+          <ul>
+            <li><a class="icon-center" href="#pop-up"><img src="./images/article_black_24dp.svg" alt="Get Quote">Quote</a></li>
+            <li><a class="icon-center" href="tel:14349811977"><img src="./images/phone_black_24dp.svg" alt="Call Now">Call</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>van der Linde Crane Service, LLC</h1>
+        <a href="#pop-up">
+          <h2 class="quote-button">Get Quote</h2>
+        </a>
+      </div>
+    </section>
+
+    <h4>Providing OSHA certified crane services for Charlottesville and surrounding areas for the last 30 years.
+      Perfect for small to medium size jobs with low minimums and affordable rates.</h4>
+
+    <div class="about" id="gallery">
+      <h2>About Us</h2>
+      <img class="about-img" src="./images/Resized_20211206_110116.jpg" alt="Todd Johnson operating his crane">
+    </div>
+
+    <div class="reviews" id="reviews">
+
+    </div>
+
+    <div id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img class="gallery-img" src="./images/2021-03-31.jpeg" alt="">
+        <img class="gallery-img" src="./images/IMG_0401001.jpg" alt="">
+        <img class="gallery-img" src="./images/cropped hero.jpeg" alt="">
+        <img class="gallery-img" src="./images/Resized_20211206_110116.jpg" alt="">
+      </div>
+    </div>
+
+    <div id="pop-up" class="overlay">
+      <div class="popup">
+        <form class="form-container" id="form">
+          <h3>Get Quote</h3>
+          <a class="close" href="#" onclick="clear()"><img src="./images/close_black_24dp.svg" alt="close"></a>
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="tel" placeholder="Phone Number" id="tel" maxlength="12" name="phone number">
+          <input type="email" placeholder="Email Address" name="email" required>
+          <textarea placeholder="I was wondering about availability and rates. I need help with the following:"
+            id="message" maxlength="1000"></textarea>
+          <div id="counter"></div>
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <h2>Contact Us</h2>
+    <div class="contact">
+      <h3>Contact</h3>
+      <h4>Call or text 434-981-1977</h4>
+    </div>
+    <div class="hours">
+      <h3>Business Hours</h3>
+      <h4>Mon-Sun 6:00 AM - 6:00 PM</h4>
+    </div>
+  </footer>
+  <script src="./scripts.js"></script>
+</body>
+
+</html>

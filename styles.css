@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 400;
+}
+main {
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+h1 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 2rem;
+}
+
+/*Header Section*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 0px 5px gray;
+}
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.logo {
+    position: absolute;
+    max-width: 20%;
+    min-width: 120px;
+    inset: 0 0 0 2rem;
+    max-height: 100%;
+}
+.menu-icon {
+    padding: .25rem;
+}
+.collapsible {
+    width: 2.25rem;
+    height: 2.25rem;
+    background-image: url(./images/menu_black_24dp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+.collapsible:hover {
+    background-color: #CCC;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #5f9bce;
+    box-shadow: 0px 0px 5px gray;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a {
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media only screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/*Right Menu Items*/
+
+ul {
+    list-style: none;
+    display: flex;
+}
+.right-menu-items {
+    padding: 1.25rem 2rem 1.25rem 0;
+}
+
+.icon-center {
+    display: flex;
+    align-items: center;
+}
+
+.icon-center:hover {
+    color: #254A61;
+}
+.icon {
+    padding-right: .25rem;
+}
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 640px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}
+
+/*Hero*/
+.hero {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    background-image: url(./images/hero.jpeg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    justify-content: right;
+}
+.hero-content {
+    background-color: #9AC6E1;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 8rem 4rem 12rem 4rem;
+    max-width: 20rem;
+}
+.quote-button {
+    padding: 1rem;
+    background-color: #254A61;
+    border-radius: 5px;
+    color: #FFF;
+    text-align: center;
+}
+.quote-button:hover {
+    background-color: #5A5D63;
+    box-shadow: 0px 0px 5px black;
+}
+
+/*About*/
+.about {
+    width: 80%;
+    margin: auto;
+}
+.about-img {
+    width: 50%;
+    margin: 1rem;
+}
+
+/*Reviews*/
+
+/*Gallery*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-img {
+    max-width: 70%;
+    width: 20rem;
+    height: auto;
+    margin: auto;
+}
+
+/*Quote Form Popup*/
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popupfsdfsdf {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+    margin-top: 1em;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    color: #666;
+    box-shadow: inset 0 0 0.25rem #ddd;
+}
+textarea:focus {
+    outline: none;
+    border: 1px solid darken(#ddd, 5%);
+    box-shadow: inset 0 0 0.5rem darken(#ddd, 5%);
+}
+
+/*Footer*/
+footer {
+    margin-top: 2rem;
+}
+.contact, .hours {
+    display: inline-block;
+}
